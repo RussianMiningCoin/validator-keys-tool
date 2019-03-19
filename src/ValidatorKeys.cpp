@@ -44,7 +44,7 @@ ValidatorKeys::ValidatorKeys ()
     : tokenSequence_ (0)
     , revoked_ (false)
 {
-    std::tie (publicKey_, secretKey_) = generateKeyPair (randomSeed ());
+    std::tie (publicKey_, secretKey_) = generateKeyPair (randomSeed (), false);
 }
 
 ValidatorKeys::ValidatorKeys (
